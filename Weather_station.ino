@@ -1,10 +1,10 @@
 #include <Wire.h>
-#include <Adafruit_BMP085.h>
+#include <Adafruit_BMP085.h>  //import this library
 #include <Arduino.h>
-#include "DHT.h"
+#include "DHT.h"    //import this library
 #define DHTPIN 8 
 #define DHTTYPE DHT11  
-Adafruit_BMP085 bmp;
+Adafruit_BMP085 bmp;    //import this library
 DHT dht(DHTPIN, DHTTYPE);   // Initialize DHT library
 char temperature[] = "Temp = 00.0 C  ";
 char humidity[]  = "RH   = 00.0 %  ";
